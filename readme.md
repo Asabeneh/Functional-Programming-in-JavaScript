@@ -486,7 +486,7 @@ JavaScript
 
 React  
 
-1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyon)
+1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyone)
 
 Python  
 
