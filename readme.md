@@ -22,6 +22,17 @@
 
 ![Functional Programming](./images/functional_programming_banner.png)
 
+- [1. forEach](#1-foreach)
+- [2. map](#2-map)
+- [3. filter](#3-filter)
+- [4. reduce](#4-reduce)
+- [5. find](#5-find)
+- [6. findIndex](#6-findindex)
+- [7. some](#7-some)
+- [8. every](#8-every)
+- [Exercise](#exercise)
+- [More Materials](#more-materials)
+
 In this article, I will try to help you to have a very good understanding of the most common feature of JavaScript, *functional programming*.
 
 *Functional programming* allows you to write shorter code, clean code, and also to solve complicated problems which might be difficult to solve in a traditional way.
