@@ -482,10 +482,11 @@ JavaScript
 1. [30DaysJavaScript challenge](https://github.com/Asabeneh/30DaysOfJavaScript)
 2. [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone)
 3. [JavaScript Loops](https://github.com/Asabeneh/JavaScript-Loops)
+4. [Destructuring in JavaScript](https://github.com/Asabeneh/Destructuring-in-JavaScript)
 
 React  
 
-1.[React for Everyone](https://github.com/Asabeneh/React-For-Everyon)
+1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyon)
 
 Python  
 
