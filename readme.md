@@ -70,12 +70,12 @@ const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 countries.forEach((country, i) => console.log(i, country.toUpperCase()))
 ```
 
-output:
-
+```sh
 0 "FINLAND"
 1 "ESTONIA"
 2 "SWEDEN"
 3 "NORWAY"
+```
 
 For example if we like to change each country to uppercase and store it back to an array we write it as follows.
 
@@ -85,8 +85,11 @@ const newCountries = []
 countries.forEach(country => newCountries.push(country))
 
 console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
+```
+
 Let us see more examples. For instance if we want to sum an array of numbers we can use forEach or reduce. Let us see how we use forEach to sum all numbers in an array.
 
+```js
 const numbers = [1, 2, 3, 4, 5]
 let sum = 0
 numbers.forEach((n) => sum += n)
@@ -165,7 +168,6 @@ For instance if we want to filter out countries containing a substring land from
 
 ```js
 // syntax in a normal or a function declaration
-
 function callback(item) {
   return // boolean
 }
@@ -178,10 +180,11 @@ const callback = (item) => {
   return // boolean
 }
 const filteredArray = array.filter(callback)
+```
 
+```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithLand = countries.filter(country => country.includes('land'))
-
 console.log(countriesWithLand) // ["Finland", "Iceland"]
 ```
 
@@ -190,7 +193,6 @@ How about if we want to filter out countries not containing the substring land. 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithLand = countries.filter(country => !country.includes('land'))
-
 console.log(countriesWithLand) // ["Estonia", "Sweden", "Norway"]
 ```
 
@@ -200,9 +202,7 @@ Let's see an additional example about the filter, let us filter even or odd numb
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const evens = numbers.filter(n => n % 2 === 0)
 const odds = numbers.filter(n => n % 2 !== 0)
-
 console.log(evens) // [0, 2, 4, 6, 8, 10]
-
 console.log(odds) // [1, 3, 5, 7, 9]
 ```
 
@@ -300,7 +300,6 @@ Let find the first even number and the first odd number in the numbers array.
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const firstEvenNum = numbers.find((n) => n % 2 === 0)
 const firstOddNum = numbers.find((n) => n % 2 !== 0)
-
 console.log(firstEvenNum)  // 0
 console.log(firstOddNum)   // 1
 ```
@@ -357,7 +356,6 @@ const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const firstEvenIndex = numbers.findIndex((n) => n % 2 === 0)
 const firstOddIndex = numbers.findIndex((n) => n % 2 !== 0)
 console.log(firstEvenIndex)  // 0
-
 console.log(firstOddIndex)   // 1
 ```
 
@@ -389,7 +387,6 @@ In the following array some numbers are even and some are odd, so if I ask you a
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const someAreEvens = numbers.some((n) => n % 2 === 0)
 const someAreOdds = numbers.some((n) => n % 2 !== 0)
-
 console.log(someAreEvens) // true
 console.log(someAreOdds)  // true
 ```
@@ -400,7 +397,6 @@ Let us another example
 const evens = [0, 2, 4, 6, 8, 10]
 const someAreEvens = evens.some((n) => n % 2 === 0)
 const someAreOdds = evens.some((n) => n % 2 !== 0)
-
 console.log(someAreEvens) // true
 console.log(someAreOdds)  // false
 ```
