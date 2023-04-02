@@ -3,7 +3,6 @@ const countriesWithLand = countries.filter(country => country.includes('land'))
 
 console.log(countriesWithLand) // ["Finland", "Iceland"]
 
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithoutLand = countries.filter(country => !country.includes('land'))
 
 console.log(countriesWithoutLand) // ["Estonia", "Sweden", "Norway"]
