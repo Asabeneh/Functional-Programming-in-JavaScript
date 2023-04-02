@@ -15,9 +15,8 @@
 
 <div>
 
-<small>Support [**Asabeneh**](https://www.patreon.com/asabeneh?fan_landing=true) to create more educational materials</small>  
-[<img src = './images/become_patreon.png' alt='become-asabeneh-patreon' title='click' />](https://www.patreon.com/asabeneh?fan_landing=true) 
- 
+<small>Support <a href = "https://www.paypal.me/asabeneh">Asabeneh</a> to create more educational materials</small>  
+</div>
 </div>
 
 ![Functional Programming](./images/functional_programming_banner.png)
@@ -37,7 +36,7 @@ In this article, I will try to help you to have a very good understanding of the
 
 *Functional programming* allows you to write shorter code, clean code, and also to solve complicated problems which might be difficult to solve in a traditional way.
 
-For more JavaScript and other programming lessons and tutorials, you check <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera</a> YouTube channel. 
+For more JavaScript and other programming lessons and tutorials, you may check <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera</a> YouTube channel. 
 
 In this article we will cover all JS functional programming methods:
 
