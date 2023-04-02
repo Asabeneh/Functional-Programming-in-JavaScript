@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1> Functional in Programming</h1>
+  <h1> Functional Programming in JavaScript </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -392,7 +392,7 @@ Let us move on to the next functional programming, some.
 
 ## 7. some
 
-The some method is used with array and return a boolean. If all the items satisfy the criteria the result will be true else it will be false. Let us see it with an example.
+The some method is used with array and return a boolean. If one or some of the items satisfy the criteria the result will be true else it will be false. Let us see it with an example.
 
 In the following array some numbers are even and some are odd, so if I ask you a question, are there even numbers in the array then your answer will be yes. If I ask you also another question, are there odd numbers in the array then your answer will be yes. On the contrary, if I ask you, are all the numbers even or odd then your answer will be no because all the numbers are not even or odd.
 
@@ -488,7 +488,7 @@ JavaScript
 
 React  
 
-1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyon)
+1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyone)
 
 Python  
 
