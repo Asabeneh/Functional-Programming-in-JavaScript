@@ -1,4 +1,3 @@
-
 <div align="center">
   <h1> Functional Programming in JavaScript </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
@@ -15,7 +14,8 @@
 
 <div>
 
-<small>Support <a href = "https://www.paypal.me/asabeneh">Asabeneh</a> to create more educational materials</small>  
+<small>Support <a href = "https://www.paypal.me/asabeneh">Asabeneh</a> to create more educational materials</small>
+
 </div>
 </div>
 
@@ -32,11 +32,11 @@
 - [Exercise](#exercise)
 - [More Materials](#more-materials)
 
-In this article, I will try to help you to have a very good understanding of the most common feature of JavaScript, *functional programming*.
+In this article, I will try to help you to have a very good understanding of the most common feature of JavaScript, _functional programming_.
 
-*Functional programming* allows you to write shorter code, clean code, and also to solve complicated problems which might be difficult to solve in a traditional way.
+_Functional programming_ allows you to write shorter code, clean code, and also to solve complicated problems which might be difficult to solve in a traditional way.
 
-For more JavaScript and other programming lessons and tutorials, you may check <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera</a> YouTube channel. 
+For more JavaScript and other programming lessons and tutorials, you may check <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw">Washera</a> YouTube channel.
 
 In this article we will cover all JS functional programming methods:
 
@@ -57,11 +57,11 @@ We use forEach when we like to iterate through an array of items. The forEach is
 // syntax in a normal or a function declaration
 
 function callback(item, index, arr) {}
-array.forEach(callback)
+array.forEach(callback);
 
 // or syntax in an arrow function
-const callback = (item, i, arr) => {}
-array.forEach(callback) 
+const callback = (item, i, arr) => {};
+array.forEach(callback);
 ```
 
 The call back function could be a function declaration or an arrow function.
@@ -69,17 +69,17 @@ The call back function could be a function declaration or an arrow function.
 Let see different examples
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-countries.forEach(function(country, index, arr) {
-  console.log(i, country.toUpperCase())
-})
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+countries.forEach(function (country, index, arr) {
+  console.log(index, country.toUpperCase());
+});
 ```
 
 If there is no much code inside the code block we can use an arrow function and we can write it without a curly bracket. The index and the array parameters are optional, we can omit them.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-countries.forEach((country, i) => console.log(i, country.toUpperCase()))
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+countries.forEach((country, i) => console.log(i, country.toUpperCase()));
 ```
 
 ```sh
@@ -92,21 +92,21 @@ countries.forEach((country, i) => console.log(i, country.toUpperCase()))
 For example if we like to change each country to uppercase and store it back to an array we write it as follows.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const newCountries = []
-countries.forEach(country => newCountries.push(country))
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const newCountries = [];
+countries.forEach((country) => newCountries.push(country));
 
-console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
+console.log(newCountries); // ["Finland", "Estonia", "Sweden", "Norway"]
 ```
 
 Let us see more examples. For instance if we want to sum an array of numbers we can use forEach or reduce. Let us see how we use forEach to sum all numbers in an array.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-let sum = 0
-numbers.forEach((n) => sum += n)
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+numbers.forEach((n) => (sum += n));
 
-console.log(sum) // 15
+console.log(sum); // 15
 ```
 
 Let us move to the next functional programming method which is going to be a map.
@@ -119,17 +119,17 @@ We use the map method whenever we like to modify an array. We use the map method
 // syntax in a normal or a function declaration
 
 function callback(item, i) {
-return // code goes here
+  return; // code goes here
 }
 
-const modifiedArray = array.map(callback)
+const modifiedArray = array.map(callback);
 
 // or syntax in an arrow function
 
 const callback = (item, i) => {
-return // code goes here
-}
-const modifiedArray = array.map(callback)
+  return; // code goes here
+};
+const modifiedArray = array.map(callback);
 ```
 
 Now, let us modify the countries array using the map method. The index is an optional parameter
@@ -137,39 +137,38 @@ Now, let us modify the countries array using the map method. The index is an opt
 ```js
 // Using function declaration
 
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
 
-const newCountries = countries.map(function(country) {
-return country.toUpperCase()
-})
+const newCountries = countries.map(function (country) {
+  return country.toUpperCase();
+});
 
-console.log(newCountries)
+console.log(newCountries);
 
 // map using an arrow function call back
 
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const newCountries = countries.map(country => country.toUpperCase())
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const newCountries = countries.map((country) => country.toUpperCase());
 
-console.log(newCountries) // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
-
+console.log(newCountries); // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
 ```
 
 As you can see that map is very handy to modify an array and to get an array back. Now, let us create an array of the length of the countries from the countries array.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const countriesLength = countries.map(country => country.length)
+const countries = ["Finland", "Estonia", "Sweden", "Norway"];
+const countriesLength = countries.map((country) => country.length);
 
-console.log(countriesLength) // [7, 7, 6, 6]
+console.log(countriesLength); // [7, 7, 6, 6]
 ```
 
 Let us see another more example
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const squares = numbers.map(n => n ** 2)
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map((n) => n ** 2);
 
-console.log(squares) // [1, 4, 9, 16, 25]
+console.log(squares); // [1, 4, 9, 16, 25]
 ```
 
 ## 3. filter
@@ -181,41 +180,45 @@ For instance if we want to filter out countries containing a substring land from
 ```js
 // syntax in a normal or a function declaration
 function callback(item) {
-  return // boolean
+  return; // boolean
 }
 
-const filteredArray = array.filter(callback)
+const filteredArray = array.filter(callback);
 
 // or syntax in an arrow function
 
 const callback = (item) => {
-  return // boolean
-}
-const filteredArray = array.filter(callback)
+  return; // boolean
+};
+const filteredArray = array.filter(callback);
 ```
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const countriesWithLand = countries.filter(country => country.includes('land'))
-console.log(countriesWithLand) // ["Finland", "Iceland"]
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const countriesWithLand = countries.filter((country) =>
+  country.includes("land")
+);
+console.log(countriesWithLand); // ["Finland", "Iceland"]
 ```
 
 How about if we want to filter out countries not containing the substring land. We use negation to achieve that.
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const countriesWithLand = countries.filter(country => !country.includes('land'))
-console.log(countriesWithLand) // ["Estonia", "Sweden", "Norway"]
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const countriesWithLand = countries.filter(
+  (country) => !country.includes("land")
+);
+console.log(countriesWithLand); // ["Estonia", "Sweden", "Norway"]
 ```
 
 Let's see an additional example about the filter, let us filter even or odd numbers from an array of numbers
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const evens = numbers.filter(n => n % 2 === 0)
-const odds = numbers.filter(n => n % 2 !== 0)
-console.log(evens) // [0, 2, 4, 6, 8, 10]
-console.log(odds) // [1, 3, 5, 7, 9]
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evens = numbers.filter((n) => n % 2 === 0);
+const odds = numbers.filter((n) => n % 2 !== 0);
+console.log(evens); // [0, 2, 4, 6, 8, 10]
+console.log(odds); // [1, 3, 5, 7, 9]
 ```
 
 Now, you know how to filter let us move on to the next functional programming, reduce.
@@ -248,41 +251,41 @@ The default initial value is 0. We can change the initial value if we want to ch
 For instance if we want to add all items in an array and if all the items are numbers we can use reduce.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const sum = numbers.reduce((acc, cur) => acc + cur)
-console.log(sum) // 55
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = numbers.reduce((acc, cur) => acc + cur);
+console.log(sum); // 55
 ```
 
 Reduce has a default initial value which is zero. Now, let us use a different initial value which is 5 in this case.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const sum = numbers.reduce((acc, cur) => acc + cur, 5)
-console.log(sum) // 60
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = numbers.reduce((acc, cur) => acc + cur, 5);
+console.log(sum); // 60
 ```
 
 Let us concatenate strings using reduce
 
 ```js
-const strs = ['Hello', 'world', '!']
-const helloWorld = strs.reduce((acc, cur) => acc + ' '+  cur)
-console.log(helloWorld) // "Hello world !"
+const strs = ["Hello", "world", "!"];
+const helloWorld = strs.reduce((acc, cur) => acc + " " + cur);
+console.log(helloWorld); // "Hello world !"
 ```
 
 We can multiply items of an array using reduce and we will return the value.
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const value = numbers.reduce((acc, cur) => acc * cur)
-console.log(value) // 120
+const numbers = [1, 2, 3, 4, 5];
+const value = numbers.reduce((acc, cur) => acc * cur);
+console.log(value); // 120
 ```
 
 Let us try it with an initial value
 
 ```js
-const numbers = [1, 2, 3, 4, 5]
-const value = numbers.reduce((acc, cur) => acc * cur, 10)
-console.log(value) // 1200
+const numbers = [1, 2, 3, 4, 5];
+const value = numbers.reduce((acc, cur) => acc * cur, 10);
+console.log(value); // 1200
 ```
 
 ## 5. find
@@ -309,27 +312,27 @@ const item = array.find(callback)
 Let find the first even number and the first odd number in the numbers array.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const firstEvenNum = numbers.find((n) => n % 2 === 0)
-const firstOddNum = numbers.find((n) => n % 2 !== 0)
-console.log(firstEvenNum)  // 0
-console.log(firstOddNum)   // 1
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstEvenNum = numbers.find((n) => n % 2 === 0);
+const firstOddNum = numbers.find((n) => n % 2 !== 0);
+console.log(firstEvenNum); // 0
+console.log(firstOddNum); // 1
 ```
 
 Let us find the first country which contains a substring way
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const countryWithWay= countries.find((country) => country.includes('way'))
-console.log(countriesWithWay) // Norway
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const countryWithWay = countries.find((country) => country.includes("way"));
+console.log(countriesWithWay); // Norway
 ```
 
 Let us find the first country which has only six characters
 
 ```js
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
-const sixCharsCountry = countries.find((country) => country.length === 6)
-console.log(sixCharsCountry) // Sweden
+const countries = ["Finland", "Estonia", "Sweden", "Norway", "Iceland"];
+const sixCharsCountry = countries.find((country) => country.length === 6);
+console.log(sixCharsCountry); // Sweden
 ```
 
 Let us find the first country in the array which has the letter 'o'
@@ -364,11 +367,11 @@ const index = array.findIndex(callback)
 Let us find the index of the first even number and the index of the first odd number in the numbers array.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const firstEvenIndex = numbers.findIndex((n) => n % 2 === 0)
-const firstOddIndex = numbers.findIndex((n) => n % 2 !== 0)
-console.log(firstEvenIndex)  // 0
-console.log(firstOddIndex)   // 1
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstEvenIndex = numbers.findIndex((n) => n % 2 === 0);
+const firstOddIndex = numbers.findIndex((n) => n % 2 !== 0);
+console.log(firstEvenIndex); // 0
+console.log(firstOddIndex); // 1
 ```
 
 Let us find the index of the first country in the array which has exactly six characters
@@ -396,21 +399,21 @@ The some method is used with array and return a boolean. If one or some of the i
 In the following array some numbers are even and some are odd, so if I ask you a question, are there even numbers in the array then your answer will be yes. If I ask you also another question, are there odd numbers in the array then your answer will be yes. On the contrary, if I ask you, are all the numbers even or odd then your answer will be no because all the numbers are not even or odd.
 
 ```js
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const someAreEvens = numbers.some((n) => n % 2 === 0)
-const someAreOdds = numbers.some((n) => n % 2 !== 0)
-console.log(someAreEvens) // true
-console.log(someAreOdds)  // true
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const someAreEvens = numbers.some((n) => n % 2 === 0);
+const someAreOdds = numbers.some((n) => n % 2 !== 0);
+console.log(someAreEvens); // true
+console.log(someAreOdds); // true
 ```
 
 Let us another example
 
 ```js
-const evens = [0, 2, 4, 6, 8, 10]
-const someAreEvens = evens.some((n) => n % 2 === 0)
-const someAreOdds = evens.some((n) => n % 2 !== 0)
-console.log(someAreEvens) // true
-console.log(someAreOdds)  // false
+const evens = [0, 2, 4, 6, 8, 10];
+const someAreEvens = evens.some((n) => n % 2 === 0);
+const someAreOdds = evens.some((n) => n % 2 !== 0);
+console.log(someAreEvens); // true
+console.log(someAreOdds); // false
 ```
 
 Now, let us see one more functional programming, every.
@@ -438,28 +441,28 @@ console.log(someAreOdds)  // false
 
 ## Exercise
 
-  ```js
-  const products = [
-    { product: 'banana', price: 3 },
-    { product: 'mango', price: 6 },
-    { product: 'potato', price: ' ' },
-    { product: 'avocado', price: 8 },
-    { product: 'coffee', price: 10 },
-    { product: 'tea', price: '' }
-  ]
-  ```
+```js
+const products = [
+  { product: "banana", price: 3 },
+  { product: "mango", price: 6 },
+  { product: "potato", price: " " },
+  { product: "avocado", price: 8 },
+  { product: "coffee", price: 10 },
+  { product: "tea", price: "" },
+];
+```
 
 1. Print the price of each product using forEach
 2. Print the product items as follows using forEach
 
-    ```sh
-    The price of banana is 3 euros.
-    The price of mango is 6 euros.
-    The price of potato is unknown.
-    The price of avocado is 8 euros.
-    The price of coffee is 10 euros.
-    The price of tea is unknown.
-    ```
+   ```sh
+   The price of banana is 3 euros.
+   The price of mango is 6 euros.
+   The price of potato is unknown.
+   The price of avocado is 8 euros.
+   The price of coffee is 10 euros.
+   The price of tea is unknown.
+   ```
 
 3. Calculate the sum of all the prices using forEach
 4. Create an array of prices using map and store it in a variable prices
@@ -478,21 +481,21 @@ console.log(someAreOdds)  // false
 
 If you want to dive deep into JavaScript, you can give it a try to the [30DaysOfJavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) challenge. This challenge will take quite long time to finish but you can get all you need about JavaScript
 
-JavaScript  
+JavaScript
 
 1. [30DaysJavaScript challenge](https://github.com/Asabeneh/30DaysOfJavaScript)
 2. [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone)
 3. [JavaScript Loops](https://github.com/Asabeneh/JavaScript-Loops)
 4. [Destructuring in JavaScript](https://github.com/Asabeneh/Destructuring-in-JavaScript)
 
-React  
+React
 
 1. [React for Everyone](https://github.com/Asabeneh/React-For-Everyone)
 
-Python  
+Python
 
 1. [30DaysOfPython](https://github.com/Asabeneh/30-Days-Of-Python)
 
-🎉 CONGRATULATIONS 🎉  
+🎉 CONGRATULATIONS 🎉
 
 Now, you know everything you need to know about JavaScript functional programming methods.
